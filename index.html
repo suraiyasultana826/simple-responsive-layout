@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 2px solid salmon;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .box{
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+   
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            margin-top:20px;
+            width: 50%;
+            justify-content: center;
+            border: 2px solid red;
+        }
+        .login-form input{
+            margin-top: 20px;
+        }
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .item{
+            border: 1px solid aquamarine;
+        }
+        .con{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px 200px; */
+            grid-template-columns: repeat(3,600px);
+        }
+        .calendar{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+        row-gap: 20px;
+        column-gap: 10px;
+        grid-template-rows:  40px repeat(5, 50px);
+        
+        }
+        .date , .day{
+            background-color: skyblue;
+border-radius: 5px;
+
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5em;
+       }
+       .day{
+
+        background-color: gray;
+       
+       }
+    </style>
+</head>
+<body>
+    <h1>Flex box layout</h1>
+    <div class="container"><div class="box">box -1</div>
+    <div class="box">box -2</div>
+    <div class="box">box -3</div></div>
+    <nav>
+       <div> <a href="">home </a>
+        <a href="">profile</a>
+        <a href="">blog</a>
+        <a href="">about</a></div>
+        <a href="">login</a></nav>
+      <section class="login-form-container">
+        <form class = "login-form" >
+            <h3>please log in</h3>
+            <input type="email" placeholder="Your email" required>
+            <input type="password" name="" id="" placeholder="Your password" >
+<input type="submit" value="Login">
+        </form>
+      </section>
+      <div class="con">
+        <div class="item">item -1</div>
+        <div class="item">item -2</div>
+        <div class="item">item -3</div>
+        <div class="item">item -4</div>
+        <div class="item">item -5</div>
+        <div class="item">item -6</div>
+        <div class="item">item -7</div>
+        <div class="item">item -8</div>
+        <div class="item">item -9</div>
+        <div class="item">item -10</div>
+        <div class="item">item -11</div>
+        <div class="item">item -12</div>
+        <div class="item">item -13</div>
+        <div class="item">item -14</div>
+        <div class="item">item -15</div>
+        <div class="item">item -16</div>
+        <div class="item">item -17</div>
+        <div class="item">item -18</div>
+        <div class="item">item -19</div>
+        <div class="item">item -20</div>
+      </div>
+      <div class="calendar">
+        <div class="day">s</div>
+        <div class="day">m</div>
+        <div class="day">t</div>
+        <div class="day">w</div>
+        <div class="day">t</div>
+        <div class="day">f</div>
+        <div class="day">s</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+       
+      </div>
+</body>
+</html>
